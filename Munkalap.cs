@@ -50,4 +50,4 @@ namespace Autoszervizkezelo
             return $"{UgyfelNev} ({Kategoria}):  {Munkaora} óra, alkatrész: {AlkatreszAr}, [{Garancialis}] - Fizetendő: {FizetendoDij()} Ft";
         }
     }
-    }
+}

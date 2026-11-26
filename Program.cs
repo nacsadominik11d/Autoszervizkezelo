@@ -9,8 +9,11 @@ Console.WriteLine("Rögzített munkalapok:");
 
 foreach (string sor in sorok)
 {
-    munkalapok.Add(new Munkalap(sor));
+    Munkalap munkalap = new Munkalap(sor);
+    munkalapok.Add(munkalap);
+    Console.WriteLine(munkalap);
 }
+Console.WriteLine();
 
 int teljesBevetel = munkalapok.Sum(m => m.FizetendoDij());
 Console.WriteLine($"Szerviz teljes bevétele: {teljesBevetel} Ft");
